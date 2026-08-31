@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Visual Studio 디버거 전용 시각화(Natvis) 파일입니다.
+
+    조사식/지역 변수 창에서 IntVector 변수를 펼치면
+    mValues 포인터 하나만 보이는 대신 [0], [1], [2] ... 원소를 바로 볼 수 있습니다.
+-->
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+  <Type Name="IntVector">
+    <DisplayString>size = {mSize}, capacity = {mCapacity}</DisplayString>
+    <Expand>
+      <Item Name="크기">mSize</Item>
+      <Item Name="용량">mCapacity</Item>
+      <ArrayItems>
+        <Size>mSize</Size>
+        <ValuePointer>mValues</ValuePointer>
+      </ArrayItems>
+    </Expand>
+  </Type>
+</AutoVisualizer>

@@ -17,6 +17,8 @@
 - Visual Studio 기준 디버깅 방법과 주요 창을 정리한 `디버깅방법.MD`
 - 주석, 코드 접기, 서식 등 자주 쓰는 단축키를 모은 `단축키.MD`
 - x64와 x86 플랫폼, 버스, 캐시 적중률을 정리한 `x64와x86.MD`
+- 절차 지향·객체 지향의 차이, 객체지향 핵심 요소와 SOLID 원칙을 정리한 `객체지향과SOLID.MD`
+- lvalue·rvalue의 의미와 참조·이동과의 관계를 정리한 `lvalue와rvalue.MD`
 - 전처리기와 매크로, 조건부 컴파일, Debug/Release 구성을 다룬 `01_PreprocessorAndMacro.cpp`
 
 ## 01_InputOutput — 입력과 출력
@@ -89,3 +91,70 @@
 - `const int*`, `int* const`, `const int* const`의 차이
 - `void*`, 함수 포인터, 포인터의 포인터 예제
 - 배열을 함수 매개변수로 전달하는 빙고 게임 함수화 실습
+
+## 11_Cast — 형변환
+
+- 기본 자료형의 암시적·명시적 형변환과 값 손실
+- C 스타일 형변환과 C++ 스타일 형변환의 차이
+- `static_cast`, `const_cast`, `reinterpret_cast`의 용도와 주의점
+- `typeid`, `dynamic_cast`를 이용한 RTTI 실습
+
+## 12_String — 문자열
+
+- C 스타일 문자열, 널 문자, `<cstring>` 함수
+- `std::string`의 생성, 결합, 길이, 인덱스 접근
+- `insert`, `erase`, `replace`, `substr`, `find` 등 주요 문자열 함수
+- `getline`으로 공백을 포함한 한 줄 입력받기
+- `find`를 활용한 문자열 검색 코딩 테스트 실습 (LeetCode 28 출처)
+- `strtok_s`, `strcpy_s`, `strcmp`로 쉼표 목록을 분리하고 찾는 몬스터 찾기 실습
+
+## 13_Class — 클래스
+
+- 클래스, 객체, 멤버 변수·멤버 함수, `public`/`private`와 캡슐화
+- `this`, Get/Set 함수, `const` 멤버 함수
+- 기본·매개변수 생성자와 소멸자의 호출 시점
+- static 멤버 변수와 static 멤버 함수
+- 학생 정보와 성적을 입력하고 합계·평균을 출력하는 클래스 실습
+- 상속의 접근 지정자, 부모·자식 생성자와 소멸자 호출 순서
+- 가상 함수, 오버라이딩, `override`, vtable/vfptr, 가상 소멸자, 실행 시간 다형성
+- 순수 가상 함수와 추상 클래스, 다중 상속과 다이아몬드 문제
+
+## 14_DynamicAllocation — 동적 할당
+
+- 스택과 힙, 런타임 동적 할당의 목적과 메모리 누수·댕글링 포인터·이중 해제
+- `new/delete`, `new[]/delete[]`와 동적 배열
+- 동적 할당한 클래스 객체의 생성자·소멸자 호출
+- `malloc/calloc/realloc/free` C 방식 동적 할당 비교와 혼용 금지
+- 입력한 학생 수만큼 성적을 저장하고 평균을 구하는 동적 배열 실습
+
+## 15_Constructor — 생성자와 복사·이동
+
+- 기본 생성자·매개변수 생성자와 멤버 초기화 목록
+- 복사 생성자와 객체 복사
+- 포인터 주소만 공유하는 얕은 복사와 독립 메모리를 만드는 깊은 복사
+- `std::move`와 이동 생성자, 이동 뒤 원본 객체의 상태
+- 직접 자원을 소유할 때 필요한 Rule of 3 / Rule of 5 소개
+
+## 16_Reference — 참조
+
+- 변수의 별칭인 일반 참조와 포인터·참조의 차이
+- 값·포인터·참조 전달 방식 비교
+- 큰 객체를 복사 없이 읽는 `const` 참조
+- 포인터 자체를 바꾸는 포인터의 참조(`Type*&`)
+- rvalue 참조, `std::move`, 만능 참조와 `std::forward` 심화 예제
+
+## 17_SnakeGame — 콘솔 스네이크 게임
+
+- 구조체 좌표, 구조체 배열 꼬리, 열거형 방향 상태를 이용한 실시간 콘솔 게임
+- `Setup → Draw → Input → Logic` 게임 루프
+- 먹이 생성, 꼬리 이동, 벽·자기 꼬리 충돌 처리
+- Windows 콘솔의 `_kbhit`, `_getch`, `Sleep`, `system("cls")` 활용
+
+## 18_Vector — STL vector
+
+- 가변 배열, 자료구조, STL과 컨테이너의 기본 개념
+- `std::vector` 생성과 인덱스·범위 기반 for문으로 원소 접근
+- `push_back`, `emplace_back`, `pop_back`, `size`, `empty`, `front`, `back`
+- `insert`, `erase`, `clear`, `reserve`, `at`의 사용법과 주의점
+- `int*`, 크기, 용량을 가진 구조체로 `push_back`, `pop_back`, `resize`, `reserve`, `clear`, `operator[]`를 직접 구현
+- `IntVector.natvis`로 조사식·지역 변수 창에서 직접 만든 가변 배열 원소를 `[0]`, `[1]` 형태로 확인

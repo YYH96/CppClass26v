@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Filter Include="이론 자료"><UniqueIdentifier>{5E3035B4-A181-49EE-98E5-56E748E6D9F8}</UniqueIdentifier></Filter>
     <Filter Include="소스 파일">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
@@ -15,17 +16,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="단축키.MD" />
-    <None Include="디버깅방법.MD" />
-    <None Include="WhatIsProgram.MD" />
-    <None Include="HeaderAndCpp.MD" />
-    <None Include="x64와x86.MD" />
-    <None Include="객체지향과SOLID.MD" />
-    <None Include="lvalue와rvalue.MD" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="01_PreprocessorAndMacro.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
+    <None Include="00_문자열이론.MD"><Filter>이론 자료</Filter></None>
+    <ClCompile Include="01_C스타일문자열.cpp"><Filter>소스 파일</Filter></ClCompile>
+    <ClCompile Include="02_std_string기초.cpp"><Filter>소스 파일</Filter></ClCompile>
+    <ClCompile Include="03_std_string주요함수.cpp"><Filter>소스 파일</Filter></ClCompile>
+    <ClCompile Include="04_getline문자열입력.cpp"><Filter>소스 파일</Filter></ClCompile>
+    <ClCompile Include="05_문자열검색코딩테스트실습.cpp"><Filter>소스 파일</Filter></ClCompile>
+    <ClCompile Include="06_몬스터찾기.cpp"><Filter>소스 파일</Filter></ClCompile>
   </ItemGroup>
 </Project>

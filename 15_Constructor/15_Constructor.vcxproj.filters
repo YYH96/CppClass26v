@@ -15,17 +15,20 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="단축키.MD" />
-    <None Include="디버깅방법.MD" />
-    <None Include="WhatIsProgram.MD" />
-    <None Include="HeaderAndCpp.MD" />
-    <None Include="x64와x86.MD" />
-    <None Include="객체지향과SOLID.MD" />
-    <None Include="lvalue와rvalue.MD" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="01_PreprocessorAndMacro.cpp">
+    <ClCompile Include="01_기본생성자와매개변수생성자.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="02_복사생성자.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="03_얕은복사와깊은복사.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="04_이동생성자.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <None Include="00_생성자와복사이동이론.MD">
+      <Filter>리소스 파일</Filter>
+    </None>
   </ItemGroup>
 </Project>

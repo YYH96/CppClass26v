@@ -15,17 +15,23 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="단축키.MD" />
-    <None Include="디버깅방법.MD" />
-    <None Include="WhatIsProgram.MD" />
-    <None Include="HeaderAndCpp.MD" />
-    <None Include="x64와x86.MD" />
-    <None Include="객체지향과SOLID.MD" />
-    <None Include="lvalue와rvalue.MD" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="01_PreprocessorAndMacro.cpp">
+    <ClCompile Include="01_new와delete.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="02_동적배열_new와delete배열.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="03_객체동적할당과생성자소멸자.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="04_C방식동적할당비교.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="05_실습_동적배열성적관리.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <None Include="00_동적할당이론.MD">
+      <Filter>리소스 파일</Filter>
+    </None>
   </ItemGroup>
 </Project>

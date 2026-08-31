@@ -14,4 +14,12 @@
   <Project Path="08_Struct/08_Struct.vcxproj" Id="b6f82e7a-b504-4a6f-9487-113e5e174d37" />
   <Project Path="09_ScopeAndLifetime/09_ScopeAndLifetime.vcxproj" Id="0973a967-d7ff-4c89-b2f6-0484980354c4" />
   <Project Path="10_Pointer/10_Pointer.vcxproj" Id="d1c89589-2876-4ce0-8bb0-b3deb5f42877" />
+  <Project Path="11_Cast/11_Cast.vcxproj" Id="33df1d5f-4e95-45cd-8469-335a371a6144" />
+  <Project Path="12_String/12_String.vcxproj" Id="a022effe-21ec-42a1-9c32-6a6ceee425c1" />
+  <Project Path="13_Class/13_Class.vcxproj" Id="d3b757a2-5a09-47a2-a1f1-2a75dd7e4632" />
+  <Project Path="14_DynamicAllocation/14_DynamicAllocation.vcxproj" Id="58ad3de6-b8e4-4ece-8f1d-945d3c91c29d" />
+  <Project Path="15_Constructor/15_Constructor.vcxproj" Id="88d12c1b-ab7f-4346-bc66-97131d4c89f9" />
+  <Project Path="16_Reference/16_Reference.vcxproj" Id="664c8d5f-505d-4bc6-87de-35db8f4aab7c" />
+  <Project Path="17_SnakeGame/17_SnakeGame.vcxproj" Id="fd4fed10-cebc-4f66-bfc3-85e528e01816" />
+  <Project Path="18_Vector/18_Vector.vcxproj" Id="d853e58b-c299-45c0-bf85-96bd363664b0" />
 </Solution>
