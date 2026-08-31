@@ -144,20 +144,20 @@
   </ItemDefinitionGroup>
 
   <ItemGroup>
-    <ClCompile Include="00_DataType.cpp" />
-    <ClCompile Include="01_VariableAndPrimitiveType.cpp">
+    <ClCompile Include="00_자료형.cpp" />
+    <ClCompile Include="01_변수와기본자료형.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="02_Constant.cpp">
+    <ClCompile Include="02_상수.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="03_PointerType.cpp">
+    <ClCompile Include="03_포인터자료형.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="04_ReferenceType.cpp">
+    <ClCompile Include="04_참조자료형.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="05_UserDefinedType.cpp">
+    <ClCompile Include="05_사용자정의자료형.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
   </ItemGroup>

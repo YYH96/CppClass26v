@@ -15,19 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="01_if문.cpp">
+    <ClCompile Include="01_구조체기본.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="02_switch문.cpp">
+    <ClCompile Include="02_구조체멤버함수와연산자.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="03_중첩조건문과삼항연산자.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="04_커피주문_if문실습.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="05_커피주문_switch문실습.cpp">
+    <ClCompile Include="03_구조체패딩.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

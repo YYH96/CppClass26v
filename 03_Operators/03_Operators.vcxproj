@@ -144,8 +144,8 @@
   </ItemDefinitionGroup>
 
   <ItemGroup>
-    <ClCompile Include="01_BuiltInOperators.cpp" />
-    <ClCompile Include="02_UserDefinedOperators.cpp">
+    <ClCompile Include="01_기본제공연산자.cpp" />
+    <ClCompile Include="02_사용자정의연산자.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
   </ItemGroup>

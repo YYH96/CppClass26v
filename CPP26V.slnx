@@ -10,4 +10,7 @@
   <Project Path="04_Conditional/04_Conditional.vcxproj" Id="4be0db6f-06d3-425e-bc05-31d9768b5dad" />
   <Project Path="05_Loop/05_Loop.vcxproj" Id="82129704-91d4-4385-8d37-361498e4011f" />
   <Project Path="06_Array/06_Array.vcxproj" Id="fb7d69d2-9ce5-4472-8f88-d1b5d511cfde" />
+  <Project Path="07_Function/07_Function.vcxproj" Id="562b3f44-e4ac-4f18-9d9a-d58a18162bf1" />
+  <Project Path="08_Struct/08_Struct.vcxproj" Id="b6f82e7a-b504-4a6f-9487-113e5e174d37" />
+  <Project Path="09_ScopeAndLifetime/09_ScopeAndLifetime.vcxproj" Id="0973a967-d7ff-4c89-b2f6-0484980354c4" />
 </Solution>

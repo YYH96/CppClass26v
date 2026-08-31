@@ -139,23 +139,23 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="01_ForLoop.cpp">
+    <ClCompile Include="01_for문.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="02_WhileAndDoWhile.cpp">
+    <ClCompile Include="02_while문과do_while문.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="03_BreakContinue.cpp">
+    <ClCompile Include="03_break와continue.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="04_StarPrintingPractice.cpp">
+    <ClCompile Include="04_별찍기실습.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="05_CoffeeOrderLoopPractice.cpp">
+    <ClCompile Include="05_커피주문반복실습.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="06_GradeSwitchLoopPractice.cpp">
+    <ClCompile Include="06_switch문성적출력실습.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
   </ItemGroup>

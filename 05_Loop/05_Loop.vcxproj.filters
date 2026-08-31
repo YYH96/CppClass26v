@@ -15,22 +15,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="01_ForLoop.cpp">
+    <ClCompile Include="01_for문.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="02_WhileAndDoWhile.cpp">
+    <ClCompile Include="02_while문과do_while문.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="03_BreakContinue.cpp">
+    <ClCompile Include="03_break와continue.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="04_StarPrintingPractice.cpp">
+    <ClCompile Include="04_별찍기실습.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="05_CoffeeOrderLoopPractice.cpp">
+    <ClCompile Include="05_커피주문반복실습.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="06_GradeSwitchLoopPractice.cpp">
+    <ClCompile Include="06_switch문성적출력실습.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

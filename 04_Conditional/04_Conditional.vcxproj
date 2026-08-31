@@ -144,19 +144,19 @@
   </ItemDefinitionGroup>
 
   <ItemGroup>
-    <ClCompile Include="01_IfStatement.cpp">
+    <ClCompile Include="01_if문.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="02_SwitchStatement.cpp">
+    <ClCompile Include="02_switch문.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="03_NestedAndTernary.cpp">
+    <ClCompile Include="03_중첩조건문과삼항연산자.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="04_CoffeeOrderPractice.cpp">
+    <ClCompile Include="04_커피주문_if문실습.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="05_CoffeeOrderSwitchPractice.cpp" />
+    <ClCompile Include="05_커피주문_switch문실습.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

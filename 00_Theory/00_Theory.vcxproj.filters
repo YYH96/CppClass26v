@@ -14,4 +14,15 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="단축키.MD" />
+    <None Include="디버깅방법.MD" />
+    <None Include="WhatIsProgram.MD" />
+    <None Include="HeaderAndCpp.MD" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="01_PreprocessorAndMacro.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>

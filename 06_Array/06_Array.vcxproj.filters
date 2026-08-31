@@ -15,19 +15,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="01_OneDimensionalArray.cpp">
+    <ClCompile Include="01_일차원배열.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="02_CharacterArrayAndString.cpp">
+    <ClCompile Include="02_문자배열과문자열.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="03_BaseballGamePractice.cpp">
+    <ClCompile Include="03_숫자야구게임실습.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="04_EvenMatchingGamePractice.cpp">
+    <ClCompile Include="04_짝맞추기게임실습.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="05_BingoOnlyMainPractice.cpp">
+    <ClCompile Include="05_빙고게임_메인만사용.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

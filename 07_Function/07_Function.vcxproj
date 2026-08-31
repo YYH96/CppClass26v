@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{fb7d69d2-9ce5-4472-8f88-d1b5d511cfde}</ProjectGuid>
-    <RootNamespace>My06Array</RootNamespace>
+    <ProjectGuid>{562b3f44-e4ac-4f18-9d9a-d58a18162bf1}</ProjectGuid>
+    <RootNamespace>My07Function</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,21 +139,29 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="01_일차원배열.cpp">
+    <ClCompile Include="01_함수.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="02_문자배열과문자열.cpp">
-      <ExcludedFromBuild>true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="03_숫자야구게임실습.cpp">
+    <ClCompile Include="02_함수오버로딩_사칙연산.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="04_짝맞추기게임실습.cpp">
+    <ClCompile Include="03_재귀함수와꼬리재귀.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="05_빙고게임_메인만사용.cpp">
+    <ClCompile Include="04_재귀함수실습_팩토리얼.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="05_재귀함수실습_피보나치.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="06_업다운게임_메인만사용.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="07_업다운게임_함수로분리.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="08_검강화게임실습.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
