@@ -1,0 +1,22 @@
+# Visual Studio user and workspace files
+.vs/
+*.user
+*.suo
+*.VC.db
+*.VC.opendb
+
+# Build outputs and intermediate files
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+*.obj
+*.pdb
+*.idb
+*.ilk
+*.exe
+*.log
+*.tlog/
+
+# Unused default project folder; the solution uses the numbered project folders.
+/CPP26V/

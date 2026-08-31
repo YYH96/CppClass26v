@@ -1,0 +1,13 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="00_Theory/00_Theory.vcxproj" Id="b10d8ee6-4378-458a-86b7-19be2eac93e8" />
+  <Project Path="01_InputOutput/01_InputOutput.vcxproj" Id="b38244e3-af51-4a41-9db5-85f727f7cd9d" />
+  <Project Path="02_DataTypeAndConstant/02_DataTypeAndConstant.vcxproj" Id="f2d49a22-90e1-47a7-8f4b-8cc505e8bfc1" />
+  <Project Path="03_Operators/03_Operators.vcxproj" Id="50489f50-8bad-4771-b41b-20f36633fa82" />
+  <Project Path="04_Conditional/04_Conditional.vcxproj" Id="4be0db6f-06d3-425e-bc05-31d9768b5dad" />
+  <Project Path="05_Loop/05_Loop.vcxproj" Id="82129704-91d4-4385-8d37-361498e4011f" />
+  <Project Path="06_Array/06_Array.vcxproj" Id="fb7d69d2-9ce5-4472-8f88-d1b5d511cfde" />
+</Solution>
