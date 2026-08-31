@@ -13,4 +13,5 @@
   <Project Path="07_Function/07_Function.vcxproj" Id="562b3f44-e4ac-4f18-9d9a-d58a18162bf1" />
   <Project Path="08_Struct/08_Struct.vcxproj" Id="b6f82e7a-b504-4a6f-9487-113e5e174d37" />
   <Project Path="09_ScopeAndLifetime/09_ScopeAndLifetime.vcxproj" Id="0973a967-d7ff-4c89-b2f6-0484980354c4" />
+  <Project Path="10_Pointer/10_Pointer.vcxproj" Id="d1c89589-2876-4ce0-8bb0-b3deb5f42877" />
 </Solution>
