@@ -15,23 +15,9 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="00_자료형.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="01_변수와기본자료형.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="02_상수.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="03_포인터자료형.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="04_참조자료형.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="05_열거형_enum과enumclass.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
+    <ClCompile Include="01_절대경로와상대경로.cpp"><Filter>소스 파일</Filter></ClCompile>
+    <ClCompile Include="02_텍스트파일저장과불러오기.cpp"><Filter>소스 파일</Filter></ClCompile>
+    <ClCompile Include="03_바이너리파일저장과불러오기.cpp"><Filter>소스 파일</Filter></ClCompile>
+    <None Include="00_파일입출력이론.MD"><Filter>리소스 파일</Filter></None>
   </ItemGroup>
 </Project>

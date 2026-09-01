@@ -33,7 +33,7 @@
 - 변수와 자주 쓰는 기본 자료형, 초기화
 - 리터럴 상수와 `const` 상수
 - 포인터 자료형과 참조 자료형의 기초
-- 구조체, 열거형 등 사용자 정의 자료형 소개
+- 일반 `enum`과 `enum class`의 차이, 열거형 값을 `switch`로 처리하는 예제
 
 ## 03_Operators — 연산자
 
@@ -158,3 +158,31 @@
 - `insert`, `erase`, `clear`, `reserve`, `at`의 사용법과 주의점
 - `int*`, 크기, 용량을 가진 구조체로 `push_back`, `pop_back`, `resize`, `reserve`, `clear`, `operator[]`를 직접 구현
 - `IntVector.natvis`로 조사식·지역 변수 창에서 직접 만든 가변 배열 원소를 `[0]`, `[1]` 형태로 확인
+
+## 19_SnakeGame_Class — 클래스와 vector 스네이크 게임
+
+- `CGameManager`, `CSnake`, `CApple`으로 역할을 분리한 콘솔 스네이크 게임
+- 뱀 몸통 좌표를 `std::vector<POS>`로 저장하고, 사과를 먹으면 `push_back`으로 성장
+- 전방 선언, 동적 할당과 해제, friend 클래스, 구조체 좌표와 열거형 방향을 함께 복습
+- 벽·자기 몸통 충돌, 사과 재생성, `W/A/S/D` 이동과 `X` 종료 처리
+
+## 20_Bingo_Class — 빙고 클래스화
+
+- `CObject` 부모 클래스와 `CPlayer`·`CAI` 자식 클래스로 공통 빙고 기능을 상속
+- `std::vector<int>` 빙고판, 셔플, 숫자 표시, 가로·세로·대각선 빙고 검사
+- 싱글턴 `CGameManager`, 부모 포인터 컨테이너, `dynamic_cast`, 가상 소멸자 복습
+- 플레이어 입력과 AI 무작위 선택으로 진행하는 5줄 빙고 게임
+
+## 21_FileIO — 파일 입출력
+
+- 절대 경로·상대 경로, 현재 작업 폴더와 `std::filesystem::current_path()`
+- `ofstream`·`ifstream`으로 플레이어 정보를 텍스트 파일에 저장하고 불러오기
+- `std::ios::binary`, `write`, `read`로 바이너리 파일 저장과 불러오기
+- 문자열은 길이와 문자 데이터를 따로 저장해야 하는 이유와 파일 형식의 순서
+
+## 22_TextRPG — 씬 매니저 TextRPG
+
+- `CBaseScene`을 상속한 로비·인게임 씬과 `CSceneManager::ChangeScene` 화면 전환
+- 로비에서 이름·직업 입력 후 플레이어를 생성하고 인게임 씬으로 전환
+- 인게임에서 탐색·휴식·로비 복귀·게임 종료를 처리하는 기본 TextRPG 흐름
+- 게임 매니저의 플레이어 소유, 씬 매니저의 씬 생성·해제, `Enter`·`Exit` 호출 순서

@@ -6,7 +6,7 @@
 
 /*
     상수(Constant): 프로그램 실행 중 값을 바꾸지 않는 데이터
-    리터럴, const, constexpr, 매크로, enum class를 비교한다.
+    리터럴, const, constexpr, 매크로를 비교한다.
 
     !기억 - 리터럴 상수는 모두 데이터 영역에 저장되는 것이 아니다.
     정수, 실수, 문자 리터럴은 보통 명령어 안의 즉시값으로 사용되어
@@ -36,11 +36,6 @@ int main()
     std::cout << "const maxUser: " << maxUser << "\n";
     std::cout << "constexpr pi: " << kPi << ", array size: " << std::size(scores) << "\n";
     std::cout << "macro MAX_PLAYER_COUNT: " << MAX_PLAYER_COUNT << "\n";
-
-    // enum class: 의미 있는 값들의 집합을 이름으로 표현하는 상수다.
-    enum class Month { January = 1, February, March };
-    Month month = Month::March;
-    std::cout << "Month::March value: " << static_cast<int>(month) << "\n";
 
     return 0;
 }

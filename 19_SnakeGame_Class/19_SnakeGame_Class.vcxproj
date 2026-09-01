@@ -22,8 +22,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{f2d49a22-90e1-47a7-8f4b-8cc505e8bfc1}</ProjectGuid>
-    <RootNamespace>My02DataTypeAndConstant</RootNamespace>
+    <ProjectGuid>{c680b5fa-9933-4700-ae4a-803908579c7e}</ProjectGuid>
+    <RootNamespace>My19SnakeGameClass</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -144,22 +144,15 @@
   </ItemDefinitionGroup>
 
   <ItemGroup>
-    <ClCompile Include="00_자료형.cpp" />
-    <ClCompile Include="01_변수와기본자료형.cpp">
-      <ExcludedFromBuild>true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="02_상수.cpp">
-      <ExcludedFromBuild>true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="03_포인터자료형.cpp">
-      <ExcludedFromBuild>true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="04_참조자료형.cpp">
-      <ExcludedFromBuild>true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="05_열거형_enum과enumclass.cpp">
-      <ExcludedFromBuild>true</ExcludedFromBuild>
-    </ClCompile>
+    <ClCompile Include="Apple.cpp" />
+    <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Snake.cpp" />
+    <ClInclude Include="Apple.h" />
+    <ClInclude Include="GameInfo.h" />
+    <ClInclude Include="GameManager.h" />
+    <ClInclude Include="Snake.h" />
+    <None Include="00_클래스와vector스네이크게임설명.MD" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -22,8 +22,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{f2d49a22-90e1-47a7-8f4b-8cc505e8bfc1}</ProjectGuid>
-    <RootNamespace>My02DataTypeAndConstant</RootNamespace>
+    <ProjectGuid>{573920de-2931-4aa2-8cbc-9504d602148f}</ProjectGuid>
+    <RootNamespace>My20BingoClass</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -144,22 +144,16 @@
   </ItemDefinitionGroup>
 
   <ItemGroup>
-    <ClCompile Include="00_자료형.cpp" />
-    <ClCompile Include="01_변수와기본자료형.cpp">
-      <ExcludedFromBuild>true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="02_상수.cpp">
-      <ExcludedFromBuild>true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="03_포인터자료형.cpp">
-      <ExcludedFromBuild>true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="04_참조자료형.cpp">
-      <ExcludedFromBuild>true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="05_열거형_enum과enumclass.cpp">
-      <ExcludedFromBuild>true</ExcludedFromBuild>
-    </ClCompile>
+    <ClCompile Include="AI.cpp" />
+    <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Object.cpp" />
+    <ClInclude Include="AI.h" />
+    <ClInclude Include="GameInfo.h" />
+    <ClInclude Include="GameManager.h" />
+    <ClInclude Include="Object.h" />
+    <ClInclude Include="Player.h" />
+    <None Include="00_빙고클래스화설명.MD" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

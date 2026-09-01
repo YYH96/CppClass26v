@@ -22,8 +22,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{f2d49a22-90e1-47a7-8f4b-8cc505e8bfc1}</ProjectGuid>
-    <RootNamespace>My02DataTypeAndConstant</RootNamespace>
+    <ProjectGuid>{a3243990-cc07-4ce6-aa1d-dde5b96a76f8}</ProjectGuid>
+    <RootNamespace>My22TextRPG</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -144,22 +144,20 @@
   </ItemDefinitionGroup>
 
   <ItemGroup>
-    <ClCompile Include="00_자료형.cpp" />
-    <ClCompile Include="01_변수와기본자료형.cpp">
-      <ExcludedFromBuild>true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="02_상수.cpp">
-      <ExcludedFromBuild>true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="03_포인터자료형.cpp">
-      <ExcludedFromBuild>true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="04_참조자료형.cpp">
-      <ExcludedFromBuild>true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="05_열거형_enum과enumclass.cpp">
-      <ExcludedFromBuild>true</ExcludedFromBuild>
-    </ClCompile>
+    <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="GameScene.cpp" />
+    <ClCompile Include="LobbyScene.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="SceneManager.cpp" />
+    <ClInclude Include="BaseScene.h" />
+    <ClInclude Include="GameInfo.h" />
+    <ClInclude Include="GameManager.h" />
+    <ClInclude Include="GameScene.h" />
+    <ClInclude Include="LobbyScene.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="SceneManager.h" />
+    <None Include="00_씬매니저와텍스트RPG설명.MD" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

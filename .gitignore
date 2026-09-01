@@ -20,3 +20,8 @@ x86/
 
 # Unused default project folder; the solution uses the numbered project folders.
 /CPP26V/
+
+# Files created when the File I/O lesson examples are executed.
+/21_FileIO/PathExample.txt
+/21_FileIO/PlayerData.txt
+/21_FileIO/PlayerData.bin

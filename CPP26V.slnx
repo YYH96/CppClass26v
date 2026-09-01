@@ -22,4 +22,8 @@
   <Project Path="16_Reference/16_Reference.vcxproj" Id="664c8d5f-505d-4bc6-87de-35db8f4aab7c" />
   <Project Path="17_SnakeGame/17_SnakeGame.vcxproj" Id="fd4fed10-cebc-4f66-bfc3-85e528e01816" />
   <Project Path="18_Vector/18_Vector.vcxproj" Id="d853e58b-c299-45c0-bf85-96bd363664b0" />
+  <Project Path="19_SnakeGame_Class/19_SnakeGame_Class.vcxproj" Id="c680b5fa-9933-4700-ae4a-803908579c7e" />
+  <Project Path="20_Bingo_Class/20_Bingo_Class.vcxproj" Id="573920de-2931-4aa2-8cbc-9504d602148f" />
+  <Project Path="21_FileIO/21_FileIO.vcxproj" Id="7041f855-280d-4a42-967c-e7f70f15c8ff" />
+  <Project Path="22_TextRPG/22_TextRPG.vcxproj" Id="a3243990-cc07-4ce6-aa1d-dde5b96a76f8" />
 </Solution>
