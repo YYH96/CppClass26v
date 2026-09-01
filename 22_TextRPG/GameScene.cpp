@@ -1,3 +1,4 @@
+#include "GameInfo.h"
 #include "GameScene.h"
 
 #include "GameManager.h"
@@ -6,21 +7,11 @@
 
 #include <cstdlib>
 #include <iostream>
-#include <Windows.h>
-
-void CGameScene::Enter()
-{
-    std::cout << "인게임 씬으로 전환했습니다.\n";
-}
-
-void CGameScene::Exit()
-{
-    std::cout << "인게임 씬을 나갑니다.\n";
-}
 
 void CGameScene::Draw() const
 {
-    CPlayer* player = CGameManager::GetInstance()->GetPlayer();
+    CGameManager* gameManager = CGameManager::GetInstance();
+    CPlayer* player = gameManager->GetPlayer();
 
     if (player == nullptr)
     {
@@ -30,7 +21,9 @@ void CGameScene::Draw() const
 
     std::cout << "========== 인게임 씬 ==========" << '\n';
     player->PrintInfo();
-    std::cout << "[1] 탐색  [2] 휴식  [3] 로비로  [0] 게임 종료\n";
+    std::cout << "현재 층: " << gameManager->GetStageLevel()
+        << "층\t이번 층 최대 골드: " << gameManager->GetMaxGoldReward() << "G\n";
+    std::cout << "[1] 탐색  [2] 휴식  [3] 로비로  [4] 저장하기  [0] 게임 종료\n";
 }
 
 void CGameScene::Update()
@@ -61,22 +54,33 @@ void CGameScene::Update()
     {
     case 1:
     {
-        const int event = std::rand() % 3;
+        // COUNT를 제외한 0~3 중 하나를 eEventType으로 변환한다.
+        const eEventType eventType = static_cast<eEventType>(
+            std::rand() % static_cast<int>(eEventType::COUNT));
 
-        if (event == 0)
+        switch (eventType)
         {
+        case eEventType::NONE:
             std::cout << "아무것도 찾지 못했습니다.\n";
-        }
-        else if (event == 1)
+            break;
+        case eEventType::GOLD:
         {
-            player->AddGold(30);
-            std::cout << "보물 상자를 찾아 30골드를 얻었습니다.\n";
+            const int goldReward = gameManager->GetRandomGoldReward();
+            player->AddGold(goldReward);
+            std::cout << "보물 상자를 찾아 " << goldReward << "골드를 얻었습니다.\n";
+            break;
         }
-        else
-        {
-            player->AddGold(10);
-            player->AddExp(40);
-            std::cout << "몬스터의 흔적을 발견해 10골드와 경험치 40을 얻었습니다.\n";
+        case eEventType::BATTLE:
+            gameManager->CreateMonster();
+            std::cout << "몬스터를 발견했습니다. 전투를 시작합니다!\n";
+            gameManager->GetSceneManager()->ChangeScene(eSceneType::COMBAT);
+            break;
+        case eEventType::NEXT_STAGE:
+            std::cout << "다음 층으로 올라가는 계단을 찾았습니다!\n";
+            gameManager->NextStage();
+            break;
+        default:
+            break;
         }
         shouldShowResult = true;
         break;
@@ -88,6 +92,17 @@ void CGameScene::Update()
     case 3:
         gameManager->GetSceneManager()->ChangeScene(eSceneType::LOBBY);
         break;
+    case 4:
+        if (gameManager->SaveGame())
+        {
+            std::cout << "게임을 저장했습니다.\n";
+        }
+        else
+        {
+            std::cout << "저장 파일을 만들지 못했습니다.\n";
+        }
+        shouldShowResult = true;
+        break;
     case 0:
         gameManager->GetSceneManager()->RequestExit();
         break;
@@ -97,9 +112,9 @@ void CGameScene::Update()
         break;
     }
 
-    // 결과를 확인하기 전에 다음 게임 루프의 system("cls")가 실행되지 않도록 대기한다.
+    // 결과를 확인한 뒤 사용자가 Enter를 누를 때 다음 게임 루프의 cls가 실행된다.
     if (shouldShowResult)
     {
-        Sleep(RESULT_DISPLAY_MILLISECOND);
+        ConsoleUtils::WaitForEnter();
     }
 }

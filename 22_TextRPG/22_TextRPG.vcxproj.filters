@@ -13,21 +13,33 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{90D286A6-3BD1-42DE-B790-7F9CE1AC52FB}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CombatScene.cpp"><Filter>Scene</Filter></ClCompile>
+    <ClCompile Include="GameInfo.cpp"><Filter>소스 파일</Filter></ClCompile>
     <ClCompile Include="GameManager.cpp"><Filter>소스 파일</Filter></ClCompile>
-    <ClCompile Include="GameScene.cpp"><Filter>소스 파일</Filter></ClCompile>
-    <ClCompile Include="LobbyScene.cpp"><Filter>소스 파일</Filter></ClCompile>
+    <ClCompile Include="GameScene.cpp"><Filter>Scene</Filter></ClCompile>
+    <ClCompile Include="LobbyScene.cpp"><Filter>Scene</Filter></ClCompile>
     <ClCompile Include="main.cpp"><Filter>소스 파일</Filter></ClCompile>
+    <ClCompile Include="Monster.cpp"><Filter>소스 파일</Filter></ClCompile>
     <ClCompile Include="Player.cpp"><Filter>소스 파일</Filter></ClCompile>
-    <ClCompile Include="SceneManager.cpp"><Filter>소스 파일</Filter></ClCompile>
-    <ClInclude Include="BaseScene.h"><Filter>헤더 파일</Filter></ClInclude>
+    <ClCompile Include="SaveSystem.cpp"><Filter>소스 파일</Filter></ClCompile>
+    <ClCompile Include="SceneManager.cpp"><Filter>Scene</Filter></ClCompile>
+    <ClInclude Include="BaseScene.h"><Filter>Scene</Filter></ClInclude>
+    <ClInclude Include="CombatScene.h"><Filter>Scene</Filter></ClInclude>
     <ClInclude Include="GameInfo.h"><Filter>헤더 파일</Filter></ClInclude>
     <ClInclude Include="GameManager.h"><Filter>헤더 파일</Filter></ClInclude>
-    <ClInclude Include="GameScene.h"><Filter>헤더 파일</Filter></ClInclude>
-    <ClInclude Include="LobbyScene.h"><Filter>헤더 파일</Filter></ClInclude>
+    <ClInclude Include="GameScene.h"><Filter>Scene</Filter></ClInclude>
+    <ClInclude Include="LobbyScene.h"><Filter>Scene</Filter></ClInclude>
+    <ClInclude Include="Monster.h"><Filter>헤더 파일</Filter></ClInclude>
     <ClInclude Include="Player.h"><Filter>헤더 파일</Filter></ClInclude>
-    <ClInclude Include="SceneManager.h"><Filter>헤더 파일</Filter></ClInclude>
+    <ClInclude Include="SaveSystem.h"><Filter>헤더 파일</Filter></ClInclude>
+    <ClInclude Include="SceneManager.h"><Filter>Scene</Filter></ClInclude>
     <None Include="00_씬매니저와텍스트RPG설명.MD"><Filter>리소스 파일</Filter></None>
+    <None Include="01_텍스트RPG제작순서.MD"><Filter>리소스 파일</Filter></None>
+    <None Include="02_세이브로드설명.MD"><Filter>리소스 파일</Filter></None>
   </ItemGroup>
 </Project>

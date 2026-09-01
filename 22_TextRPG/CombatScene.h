@@ -2,7 +2,7 @@
 
 #include "BaseScene.h"
 
-class CGameScene : public CBaseScene
+class CCombatScene : public CBaseScene
 {
 public:
     void Draw() const override;

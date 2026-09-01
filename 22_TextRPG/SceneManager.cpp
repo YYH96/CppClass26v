@@ -1,6 +1,8 @@
+#include "GameInfo.h"
 #include "SceneManager.h"
 
 #include "BaseScene.h"
+#include "CombatScene.h"
 #include "GameScene.h"
 #include "LobbyScene.h"
 
@@ -15,6 +17,7 @@ bool CSceneManager::Init()
     mScenes.resize(static_cast<int>(eSceneType::COUNT), nullptr);
     mScenes[static_cast<int>(eSceneType::LOBBY)] = new CLobbyScene;
     mScenes[static_cast<int>(eSceneType::GAME)] = new CGameScene;
+    mScenes[static_cast<int>(eSceneType::COMBAT)] = new CCombatScene;
 
     for (CBaseScene* scene : mScenes)
     {
@@ -91,4 +94,3 @@ void CSceneManager::Release()
     mCurrentScene = nullptr;
     mIsRunning = false;
 }
-
