@@ -33,6 +33,18 @@
     <ClCompile Include="06_직접만든템플릿벡터.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="07_STL리스트.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="08_직접만든양방향연결리스트.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="09_STL맵.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="10_직접만든이진탐색트리.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
     <None Include="00_자료구조와STL이론.MD">
       <Filter>리소스 파일</Filter>
     </None>
