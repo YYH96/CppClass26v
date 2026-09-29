@@ -1,5 +1,3 @@
-#include <iostream>
-
 /*
 	동적 배열 실습: 입력한 학생 수만큼 성적을 저장하고 평균을 구합니다.
 
@@ -9,41 +7,74 @@
 	3. 합계와 평균을 계산합니다.
 	4. 모든 경로에서 delete[]로 배열을 해제합니다.
 */
+#include <iostream>
+#include <string>
+
+class Student
+{
+public:
+    std::string Name;
+    int Kor = 0;
+    int Eng = 0;
+    int Math = 0;
+
+    void Input()
+    {
+        std::cout << "이름: ";
+        std::cin >> Name;
+
+        std::cout << "국어 영어 수학 점수: ";
+        std::cin >> Kor >> Eng >> Math;
+    }
+
+    static void PrintAverage(const Student students[], int count)
+    {
+        if (count <= 0)
+            return;
+
+        double korTotal = 0;
+        double engTotal = 0;
+        double mathTotal = 0;
+
+        for (int i = 0; i < count; ++i)
+        {
+            korTotal += students[i].Kor;
+            engTotal += students[i].Eng;
+            mathTotal += students[i].Math;
+        }
+
+        double total = korTotal + engTotal + mathTotal;
+
+        std::cout << "\n국어 평균: " << korTotal / count
+            << " / 영어 평균: " << engTotal / count
+            << " / 수학 평균: " << mathTotal / count
+            << " / 합계 평균: " << total / count
+            << '\n';
+    }
+};
 
 int main()
 {
-	int studentCount = 0;
-	std::cout << "학생 수를 입력하세요: ";
-	std::cin >> studentCount;
+    int count = 0;
 
-	if (studentCount <= 0)
-	{
-		std::cout << "학생 수는 1 이상이어야 합니다.\n";
-		return 0;
-	}
+    std::cout << "학생 수: ";
+    std::cin >> count;
 
-	int* scores = new int[studentCount]{};
-	int total = 0;
+    if (count <= 0)
+        return 0;
 
-	for (int i = 0; i < studentCount; ++i)
-	{
-		std::cout << i + 1 << "번 학생의 점수: ";
-		std::cin >> scores[i];
-		total += scores[i];
-	}
+    Student* students = new Student[count];
 
-	const float average = static_cast<float>(total) / studentCount;
+    for (int i = 0; i < count; ++i)
+    {
+        std::cout << "\n" << i + 1 << "번 학생\n";
+        students[i].Input();
+    }
 
-	std::cout << "\n[성적 결과]\n";
-	for (int i = 0; i < studentCount; ++i)
-	{
-		std::cout << i + 1 << "번 학생: " << scores[i] << "점\n";
-	}
-	std::cout << "합계: " << total << "점\n";
-	std::cout << "평균: " << average << "점\n";
+    Student::PrintAverage(students, count);
 
-	delete[] scores;
-	scores = nullptr;
+    delete[] students;
+    students = nullptr;
 
-	return 0;
+    return 0;
 }

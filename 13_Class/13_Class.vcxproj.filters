@@ -51,5 +51,8 @@
     <None Include="01_상속과다형성이론.MD">
       <Filter>리소스 파일</Filter>
     </None>
+    <ClCompile Include="Coffe.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

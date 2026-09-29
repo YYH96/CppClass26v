@@ -30,5 +30,14 @@
     <ClCompile Include="05_빙고게임_메인만사용.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="06_이차원배열과틱택토.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="07_배열을함수로넘기기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="08_이차원배열과배열포인터.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

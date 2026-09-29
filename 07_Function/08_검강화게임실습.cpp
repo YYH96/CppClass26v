@@ -3,6 +3,7 @@
 #include <ctime>
 #include <iomanip>
 #include <iostream>
+#include <Windows.h>
 
 /*
     함수 실습 - 검 강화 게임
@@ -58,6 +59,7 @@ int main()
             if (gold < upgradeCost)
             {
                 std::cout << "골드가 부족합니다. 필요한 골드: " << upgradeCost << "G\n";
+                Sleep(500.f);
                 continue;
             }
 
@@ -71,6 +73,8 @@ int main()
             {
                 std::cout << "강화 실패! 검 레벨이 1로 돌아갔습니다.\n";
             }
+
+            Sleep(500.f);
         }
         else if (menu == 2)
         {
@@ -82,19 +86,23 @@ int main()
             std::cout << "레벨 " << soldWeaponLevel << " 검을 " << sellPrice << "G에 팔았습니다.\n";
             std::cout << "판매 후 보유 골드: " << gold << "G\n";
             std::cout << "새 검을 받아 검 레벨이 1이 되었습니다.\n";
+            Sleep(500.f);
         }
         else if (menu == 3)
         {
             ReceiveSupportGold(gold);
+            Sleep(500.f);
         }
         else if (menu == 0)
         {
             std::cout << "게임을 종료합니다.\n";
+            Sleep(500.f);
             break;
         }
         else
         {
             std::cout << "잘못된 선택입니다.\n";
+            Sleep(500.f);
         }
     }
 
